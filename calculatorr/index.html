@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>CALCULATOR <img src="resources-calc/calculator (1).png" alt=""></h1>
+    <div class="calc-bg">
+        
+        <!-- RENDERING -->
+        <div class="render-div">
+            <h2 class="render"></h2>
+        </div>
+
+        <div class="calc">
+            <button class="operator" onclick="getInput('(')">(</button>
+            <button class="operator" onclick="getInput(')')">)</button> 
+            <button class="operator" onclick="backSpace()">⌫</button>
+            <button class="operator" onclick="clearRender();">CLR</button>
+            <br>
+
+            <button onclick="getInput('7')">7</button>
+            <button onclick="getInput('8')">8</button>
+            <button onclick="getInput('9')">9</button> 
+            <button class="operator" onclick="getInput('+')">+</button>
+            <br>
+
+            <button onclick="getInput('4')">4</button>
+            <button onclick="getInput('5')">5</button>
+            <button onclick="getInput('6')">6</button> 
+            <button class="operator" onclick="getInput('-')">-</button>
+            <br>
+
+            <button onclick="getInput('1')">1</button>
+            <button onclick="getInput('2')">2</button>
+            <button onclick="getInput('3')">3</button>
+            <button class="operator" onclick="getInput('*')">*</button>
+            <br>
+
+            <button onclick="getInput('0')">0</button>
+            <button onclick="getInput('.')">.</button>
+            <button onclick="evaluation()">=</button> 
+            <button class="operator" onclick="getInput('/')">/</button>
+        </div>
+    </div>
+    
+    <!-- JavaScript --> 
+    <script src="script.js"></script>
+</body>
+</html>
